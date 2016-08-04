@@ -1,0 +1,68 @@
+
+Recipes App
+  displays 'Kahlúa-Spiked' when request parameter 'search' is mocha (FAILED - 1)
+  utilizes the FOOD2FORK_SERVER_AND_PORT environment variable
+  utilizes the FOOD2FORK_KEY environment variable
+  visit root
+    displays chocolate (default) (FAILED - 2)
+    displays 'Powered By Food2Fork.com' (FAILED - 3)
+    displays table element that has a row with 3 columns (FAILED - 4)
+    column 1 should have the thumbnail inside img tag inside a link tag (FAILED - 5)
+    title should be inside a second column inside a link tag (FAILED - 6)
+
+Failures:
+
+  1) Recipes App displays 'Kahlúa-Spiked' when request parameter 'search' is mocha
+     Failure/Error: visit "?search=mocha"
+
+     Capybara::Poltergeist::StatusFailError:
+       Request to 'http://localhost:3000?search=mocha' failed to reach server, check DNS and/or server status
+     # ./spec/recipes_app_spec.rb:7:in `block (2 levels) in <top (required)>'
+
+  2) Recipes App visit root displays chocolate (default)
+     Failure/Error: before { visit '/' }
+
+     Capybara::Poltergeist::StatusFailError:
+       Request to 'http://localhost:3000/' failed to reach server, check DNS and/or server status
+     # ./spec/recipes_app_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  3) Recipes App visit root displays 'Powered By Food2Fork.com'
+     Failure/Error: before { visit '/' }
+
+     Capybara::Poltergeist::StatusFailError:
+       Request to 'http://localhost:3000/' failed to reach server, check DNS and/or server status
+     # ./spec/recipes_app_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  4) Recipes App visit root displays table element that has a row with 3 columns
+     Failure/Error: before { visit '/' }
+
+     Capybara::Poltergeist::StatusFailError:
+       Request to 'http://localhost:3000/' failed to reach server, check DNS and/or server status
+     # ./spec/recipes_app_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  5) Recipes App visit root column 1 should have the thumbnail inside img tag inside a link tag
+     Failure/Error: before { visit '/' }
+
+     Capybara::Poltergeist::StatusFailError:
+       Request to 'http://localhost:3000/' failed to reach server, check DNS and/or server status
+     # ./spec/recipes_app_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  6) Recipes App visit root title should be inside a second column inside a link tag
+     Failure/Error: before { visit '/' }
+
+     Capybara::Poltergeist::StatusFailError:
+       Request to 'http://localhost:3000/' failed to reach server, check DNS and/or server status
+     # ./spec/recipes_app_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+Finished in 0.74685 seconds (files took 0.39911 seconds to load)
+8 examples, 6 failures
+
+Failed examples:
+
+rspec ./spec/recipes_app_spec.rb:6 # Recipes App displays 'Kahlúa-Spiked' when request parameter 'search' is mocha
+rspec ./spec/recipes_app_spec.rb:24 # Recipes App visit root displays chocolate (default)
+rspec ./spec/recipes_app_spec.rb:28 # Recipes App visit root displays 'Powered By Food2Fork.com'
+rspec ./spec/recipes_app_spec.rb:32 # Recipes App visit root displays table element that has a row with 3 columns
+rspec ./spec/recipes_app_spec.rb:36 # Recipes App visit root column 1 should have the thumbnail inside img tag inside a link tag
+rspec ./spec/recipes_app_spec.rb:40 # Recipes App visit root title should be inside a second column inside a link tag
+
